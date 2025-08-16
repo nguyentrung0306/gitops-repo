@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/nguyentrung0306/gitops-repo.git
     targetRevision: main
-    path: my-service/overlays/dev
+    path: base
   destination:
     server: https://kubernetes.default.svc
     namespace: default
