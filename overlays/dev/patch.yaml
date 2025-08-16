@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-service
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: app-service
+          image: trungnd01/app-service:dev
+          env:
+            - name: ENV
+              value: "dev"

@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-service
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: my-service
+          image: your-docker-user/my-service:prod
+          env:
+            - name: ENV
+              value: "prod"
