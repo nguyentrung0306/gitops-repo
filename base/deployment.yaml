@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app-service
-          image: trungnd01/app-service:latest
+          image: trungnd01/app-service:ef0885e6032135dc2dab83812d2030a705953a76
           ports:
             - containerPort: 8080
